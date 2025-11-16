@@ -26,7 +26,7 @@ Carpe diem!`;
 
   useEffect(() => {
     let index = 0;
-    const typingSpeed = 30; // milliseconds per character
+    const typingSpeed = 60; // milliseconds per character - slower and smoother
 
     const typeInterval = setInterval(() => {
       if (index < fullText.length) {
@@ -79,26 +79,6 @@ Carpe diem!`;
             </div>
           </div>
 
-          {/* Signature area */}
-          {isTypingComplete && (
-            <div className="mt-16 text-right animate-fadeIn">
-              <div className="inline-block">
-                <p className="font-script text-3xl md:text-4xl text-romantic-pink mb-2">
-                  With love,
-                </p>
-                <div className="h-px w-full bg-gradient-to-r from-transparent via-romantic-pink to-transparent mb-4" />
-                <div className="flex justify-end gap-2">
-                  {[...Array(3)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="w-2 h-2 rounded-full bg-romantic-pink animate-heartbeat"
-                      style={{ animationDelay: `${i * 0.3}s` }}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Navigation */}

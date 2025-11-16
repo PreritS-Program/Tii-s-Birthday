@@ -43,18 +43,18 @@ const CoverPage = () => {
 
         <div className="max-w-2xl mx-auto mb-12 space-y-6">
           <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed animate-slideUp" style={{ animationDelay: "0.3s" }}>
-            Today is a celebration of you—the incredible person you are,
+            Today is the day made for you, the incredible person you are,
           </p>
           <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed animate-slideUp" style={{ animationDelay: "0.5s" }}>
-            and all the beautiful moments we've shared together.
+            and the beautiful moments we've shared together.
           </p>
           <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed animate-slideUp" style={{ animationDelay: "0.7s" }}>
-            This is my little gift to you, made with love. 💕
+            This is my little gift to you 💕
           </p>
         </div>
 
         <Button
-          onClick={() => navigate("/memories")}
+          onClick={() => navigate("/cake")}
           className="group relative px-8 py-6 text-lg font-semibold bg-gradient-to-r from-romantic-pink to-romantic-purple hover:from-romantic-purple hover:to-romantic-blue transition-all duration-500 glow-soft hover:glow-intense animate-slideUp"
           style={{ animationDelay: "0.9s" }}
         >

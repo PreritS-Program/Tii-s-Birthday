@@ -7,7 +7,6 @@ import { AnimatedCursor } from "./components/AnimatedCursor";
 import { ParticleBackground } from "./components/ParticleBackground";
 import { MusicPlayer } from "./components/MusicPlayer";
 import CoverPage from "./pages/CoverPage";
-import MemoriesPage from "./pages/MemoriesPage";
 import CakePage from "./pages/CakePage";
 import LetterPage from "./pages/LetterPage";
 import NotFound from "./pages/NotFound";
@@ -26,7 +25,6 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<CoverPage />} />
-            <Route path="/memories" element={<MemoriesPage />} />
             <Route path="/cake" element={<CakePage />} />
             <Route path="/letter" element={<LetterPage />} />
             <Route path="*" element={<NotFound />} />
