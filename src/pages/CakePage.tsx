@@ -134,19 +134,31 @@ const CakePage = () => {
 
           {/* Cake layers */}
           <div className="space-y-0 glow-soft">
-            {/* Top layer */}
-            <div className="w-80 h-16 bg-gradient-to-b from-romantic-pink/40 to-romantic-pink/20 rounded-t-full border-4 border-romantic-pink/50 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer" />
+            {/* Top layer - frosting */}
+            <div className="w-80 h-20 bg-gradient-to-b from-pink-300/60 to-pink-400/40 rounded-t-3xl border-4 border-pink-400/60 relative overflow-hidden shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
+              {/* Frosting details */}
+              <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-r from-pink-400/50 via-pink-300/50 to-pink-400/50" />
             </div>
             
-            {/* Middle layer */}
-            <div className="w-96 h-20 bg-gradient-to-b from-romantic-purple/40 to-romantic-purple/20 border-4 border-romantic-purple/50 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer" style={{ animationDelay: "0.5s" }} />
+            {/* Middle layer - cake */}
+            <div className="w-96 h-24 bg-gradient-to-b from-amber-800/70 to-amber-900/60 border-4 border-amber-700/60 relative overflow-hidden shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-amber-600/10 to-transparent animate-shimmer" style={{ animationDelay: "0.5s" }} />
+              {/* Cake texture */}
+              <div className="absolute inset-0 opacity-30" style={{ 
+                backgroundImage: 'repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 69, 19, 0.3) 2px, rgba(139, 69, 19, 0.3) 4px)'
+              }} />
             </div>
             
-            {/* Bottom layer */}
-            <div className="w-[28rem] h-24 bg-gradient-to-b from-romantic-blue/40 to-romantic-blue/20 rounded-b-full border-4 border-romantic-blue/50 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer" style={{ animationDelay: "1s" }} />
+            {/* Bottom layer - cake base */}
+            <div className="w-[28rem] h-28 bg-gradient-to-b from-amber-900/70 to-amber-950/60 rounded-b-3xl border-4 border-amber-800/60 relative overflow-hidden shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-amber-700/10 to-transparent animate-shimmer" style={{ animationDelay: "1s" }} />
+              {/* Cake texture */}
+              <div className="absolute inset-0 opacity-30" style={{ 
+                backgroundImage: 'repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 69, 19, 0.3) 2px, rgba(139, 69, 19, 0.3) 4px)'
+              }} />
+              {/* Plate effect */}
+              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[30rem] h-4 bg-gradient-to-b from-slate-400/40 to-slate-500/30 rounded-full blur-sm" />
             </div>
           </div>
 
@@ -172,12 +184,12 @@ const CakePage = () => {
       {/* Navigation */}
       <div className="fixed bottom-8 left-0 right-0 flex justify-between px-6 max-w-6xl mx-auto">
         <Button
-          onClick={() => navigate("/memories")}
+          onClick={() => navigate("/")}
           variant="outline"
           className="px-6 py-6 border-romantic-pink/50 hover:bg-romantic-pink/10 hover:border-romantic-pink transition-all duration-300"
         >
           <ArrowLeft className="w-5 h-5 mr-2" />
-          Back to Memories
+          Back
         </Button>
 
         <Button
