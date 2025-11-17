@@ -101,7 +101,7 @@ const CakePage = () => {
         </p>
 
         {/* Birthday Cake */}
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center items-center w-full">
           <div className="relative inline-block">
             {/* Candles */}
             <div className="flex justify-center gap-8 mb-1">
