@@ -45,9 +45,7 @@ const CoverPage = () => {
           <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed animate-slideUp" style={{ animationDelay: "0.3s" }}>
             Today is the day made for you, the incredible person you are,
           </p>
-          <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed animate-slideUp" style={{ animationDelay: "0.5s" }}>
-            and the beautiful moments we've shared together.
-          </p>
+          
           <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed animate-slideUp" style={{ animationDelay: "0.7s" }}>
             This is my little gift to you 💕
           </p>
