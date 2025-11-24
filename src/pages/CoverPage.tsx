@@ -43,7 +43,7 @@ const CoverPage = () => {
 
         <div className="max-w-2xl mx-auto mb-12 space-y-6">
           <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed animate-slideUp" style={{ animationDelay: "0.3s" }}>
-            Today is the day made for you, the incredible person you are,
+            Today is the day made for you, and the incredible person you are.
           </p>
           
           <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed animate-slideUp" style={{ animationDelay: "0.7s" }}>
