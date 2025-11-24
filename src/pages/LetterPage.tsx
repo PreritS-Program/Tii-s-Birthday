@@ -63,7 +63,7 @@ Carpe diem!`;
         {/* Letter container */}
         <div className="bg-card/60 backdrop-blur-md rounded-3xl p-12 md:p-16 border border-border/50 glow-soft animate-fadeIn">
           <h1 className="font-elegant text-5xl md:text-6xl text-center text-glow mb-12">
-             For My Gurl
+             To The Special Girl
           </h1>
 
           <div className="relative">
